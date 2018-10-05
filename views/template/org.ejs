@@ -31,45 +31,36 @@
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="home">
+                                <form>
+                                    <div class="form-group">
+                                        <div class="form-label-group">
+                                            <label>Content </label>
+                                            <textarea rows="10" id="inputEmail" class="form-control" placeholder="Log JSON data" required="required" autofocus="autofocus">
+                                            </textarea>                
+                                        </div>
+                                    </div>
+                                    <a type="submit" class="btn btn-primary btn-block">Submit</a>
+                                </form> 
+                            </div>
+                        <div class="tab-pane fade" id="profile">
                             <form>
                                 <div class="form-group">
                                     <div class="form-label-group">
+                                        <label>Content </label>
                                         <textarea rows="10" id="inputEmail" class="form-control" placeholder="Log JSON data" required="required" autofocus="autofocus">
                                         </textarea>                
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                        <label>Name</label>
+                                        <input class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Parent</label>
+                                        <input class="form-control">
+                                    </div>
                                 <a type="submit" class="btn btn-primary btn-block">Submit</a>
                             </form> 
-                        </div>
-                        <div class="tab-pane fade" id="profile">
-                            <form role="form">
-                                <div class="form-group">
-                                    <label>Content </label>
-                                    <input class="form-control">
-                                    <p class="help-block">Example block-level help text here.</p>
-                                </div>
-                                <div class="form-group">
-                                    <label>Id</label>
-                                    <input class="form-control">
-                                    <p class="help-block">Example block-level help text here.</p>
-                                </div>
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input class="form-control">
-                                    <p class="help-block">Example block-level help text here.</p>
-                                </div>
-                                <div class="form-group">
-                                    <label>Object Type</label>
-                                    <input class="form-control">
-                                    <p class="help-block">Example block-level help text here.</p>
-                                </div>
-                                <div class="form-group">
-                                    <label>Parent</label>
-                                    <input class="form-control">
-                                    <p class="help-block">Example block-level help text here.</p>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
                         </div>
                         <div class="tab-pane fade" id="messages">
                             <div class="table-responsive">
@@ -77,9 +68,11 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
+                                            <th>Content</th>
+                                            <th>Id</th>
+                                            <th>Name</th>
+                                            <th>Object Type</th>
+                                            <th>Parent</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -88,18 +81,8 @@
                                             <td>Mark</td>
                                             <td>Otto</td>
                                             <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -109,19 +92,44 @@
                         <div class="tab-pane fade" id="settings">
                             <form role="form">
                                 <div class="form-group">
-                                    <label>Content </label>
+                                    <div class="form-label-group">
+                                        <label>Content </label>
+                                        <textarea rows="10" id="inputEmail" class="form-control" placeholder="Log JSON data" required="required" autofocus="autofocus">
+                                        </textarea>                
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Id</label>
                                     <input class="form-control">
-                                    <p class="help-block">Example block-level help text here.</p>
                                 </div>
                                 <div class="form-group">
                                     <label>Name</label>
                                     <input class="form-control">
-                                    <p class="help-block">Example block-level help text here.</p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Object Type</label>
+                                    <input class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>Parent</label>
                                     <input class="form-control">
-                                    <p class="help-block">Example block-level help text here.</p>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="settings">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label>Content </label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Parent</label>
+                                    <input class="form-control">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>

@@ -2,7 +2,7 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">PRODUCT API</h1>
+            <h1 class="page-header">AUDIT-ACTION API</h1>
         </div>
         <!-- /.col-lg-12 -->
     </div>
@@ -12,19 +12,17 @@
         <div class="col-lg-10">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    PRODUCT API
+                    AUDIT-ACTION API
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#home" data-toggle="tab">PRODUCT-API001</a>
+                        <li class="active"><a href="#home" data-toggle="tab">AUDIT-ACTION-API001</a>
                         </li>
-                        <li><a href="#profile" data-toggle="tab">PRODUCT-API002</a>
+                        <li><a href="#profile" data-toggle="tab">AUDIT-ACTION-API002</a>
                         </li>
-                        <li><a href="#messages" data-toggle="tab">PRODUCT-API003</a>
-                        </li>
-                        <li><a href="#settings" data-toggle="tab">PRODUCT-API004</a>
+                        <li><a href="#messages" data-toggle="tab">AUDIT-ACTION-API003</a>
                         </li>
                     </ul>
 
@@ -33,15 +31,23 @@
                         <div class="tab-pane fade in active" id="home">
                             <form role="form">
                                 <div class="form-group">
-                                    <label>Parent </label>
+                                    <label>Time</label>
                                     <input class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Id</label>
+                                    <label>Ref</label>
                                     <input class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Name</label>
+                                    <label>CTE</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Asset</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Product</label>
                                     <input class="form-control">
                                 </div>
                                 <div class="form-group">
@@ -61,9 +67,13 @@
                                         <tr>
                                             <th>#</th>
                                             <th>Object Type</th>
-                                            <th>Parent</th>
                                             <th>Id</th>
-                                            <th>Name</th>
+                                            <th>Time</th>
+                                            <th>Ref</th>
+                                            <th>CTE</th>
+                                            <th>Audidtor</th>
+                                            <th>Asset</th>
+                                            <th>Product</th>
                                             <th>Content</th>
                                         </tr>
                                     </thead>
@@ -72,6 +82,10 @@
                                             <td>1</td>
                                             <td>Mark</td>
                                             <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>Mark</td>
                                             <td>@mdo</td>
                                             <td>Otto</td>
                                             <td>@mdo</td>
@@ -84,11 +98,23 @@
                         <div class="tab-pane fade" id="messages">
                             <form role="form">
                                 <div class="form-group">
-                                    <label>Parent </label>
+                                    <label>Time</label>
                                     <input class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Name</label>
+                                    <label>Ref</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>CTE</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Asset</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Product</label>
                                     <input class="form-control">
                                 </div>
                                 <div class="form-group">
@@ -100,43 +126,6 @@
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
-                        </div>
-                        <div class="tab-pane fade" id="settings">
-                            <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Object Type</th>
-                                            <th>Id</th>
-                                            <th>Time</th>
-                                            <th>Ref</th>
-                                            <th>CTE</th>
-                                            <th>Supply Chain</th>
-                                            <th>Content</th>
-                                            <th>Asset</th>
-                                            <th>Product</th>
-                                            <th>Location</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Number</td>
-                                            <td>Object Type</td>
-                                            <td>Id</td>
-                                            <td>Time</td>
-                                            <td>Ref</td>
-                                            <td>CTE</td>
-                                            <td>Supply Chain</td>
-                                            <td>Content</td>
-                                            <td>Asset</td>
-                                            <td>Product</td>
-                                            <td>Location</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /.table-responsive -->
                         </div>
                     </div>
                 </div>

@@ -98,7 +98,27 @@ module.exports = function(app, passport){
 	app.get('/product_api',isAuthenticated, function(req, res) {
 		res.render('template/product_api', {});
 	});
+
+	app.get('/asset_api',isAuthenticated, function(req, res) {
+		res.render('template/asset_api', {});
+	});
 	
+	app.get('/supplychain_api',isAuthenticated, function(req, res) {
+		res.render('template/supplychain_api', {});
+	});
+
+	app.get('/log_api',isAuthenticated, function(req, res) {
+		res.render('template/log_api', {});
+	});
+
+	app.get('/auditor_api',isAuthenticated, function(req, res) {
+		res.render('template/auditor_api', {});
+	});
+
+	app.get('/audit_action_api',isAuthenticated, function(req, res) {
+		res.render('template/audit_action_api', {});
+	});
+
 	app.get('/bbs/list',isAuthenticated, function(req, res) {
 		 Bbs.find({}, 
 	      function(err, bbs) {
