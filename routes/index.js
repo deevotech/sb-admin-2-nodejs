@@ -49,8 +49,14 @@ module.exports = function(app, passport){
 	   res.render('template/tables', {});
 	});
 	app.get('/forms',isAuthenticated, function(req, res) {
-	   res.render('template/forms', {});
+		res.render('template/forms', {});
+	 });
+	app.get('/create_log',isAuthenticated, function(req, res) {
+	   res.render('template/create_log', {});
 	});
+	app.get('/init_log',isAuthenticated, function(req, res) {
+		res.render('template/init_log', {});
+	 });
 	app.get('/panelswells',isAuthenticated, function(req, res) {
 	   res.render('template/panelswells', {});
 	});
@@ -75,6 +81,22 @@ module.exports = function(app, passport){
 	
   	app.get('/bbs',isAuthenticated, function(req, res) {
 	   res.render('template/bbs', {});
+	});
+
+	app.get('/org',isAuthenticated, function(req, res) {
+		res.render('template/org', {});
+	});
+
+	app.get('/party_api',isAuthenticated, function(req, res) {
+		res.render('template/party_api', {});
+	});
+
+	app.get('/location_api',isAuthenticated, function(req, res) {
+		res.render('template/location_api', {});
+	});
+
+	app.get('/product_api',isAuthenticated, function(req, res) {
+		res.render('template/product_api', {});
 	});
 	
 	app.get('/bbs/list',isAuthenticated, function(req, res) {
